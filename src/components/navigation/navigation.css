@@ -1,0 +1,64 @@
+:root {
+    --bg-color: #202020;
+    --border-bottom: #313131;
+}
+
+#navigation {
+    height: calc(100vh - 55px);
+    background-color: var(--bg-color);
+    z-index: 8;
+}
+
+li {
+    text-decoration: none;
+}
+
+/* Guide */
+.guide {
+    width: 100%;
+    padding-block: 10px;
+    border-bottom: 1px solid var(--border-bottom);
+}
+
+.guide:last-child {
+    border-bottom: unset;
+}
+
+.guide .items {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+.guide .items.active {
+    background-color: var(--border-bottom);
+}
+
+.guide .items:hover {
+    background-color: var(--border-bottom);
+    cursor: pointer;
+}
+
+.guide .items .icon {
+    margin-inline: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.guide .items .name {
+    margin-inline: 15px;
+}
+
+/* Tracking YouTuber */
+.tracking_title {
+    font-size: 14px;
+    padding: 5px 0 10px 25px;
+    color: #929292;
+}
+
+.youtuber {
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+}

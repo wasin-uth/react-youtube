@@ -1,0 +1,140 @@
+:root {
+    --bg-color: #202020;
+    --bg-search: #121212;
+    --border-color: #76e4ff;
+    --border-search: #313131;
+}
+
+#mast_head {
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+    position: fixed;
+    z-index: 9;
+}
+
+/* Start */
+.head_start {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.brand .logo {
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+}
+
+.languages {
+    margin-inline: 5px;
+    font-size: 10px;
+    opacity: 0.5;
+    transform: translateY(-5px);
+}
+
+/* Center */
+.head_center {
+    flex: 7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 40px;
+}
+
+.form_search input[type=search] {
+    background-color: var(--bg-search);
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--border-search);
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 2px 0 0 2px;
+}
+
+.form_search button[type=submit] {
+    width: 70px;
+    height: 100%;
+    background-color: var(--border-search);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+}
+
+.voice_search {
+    background-color: var(--bg-search);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 0 8px;
+}
+
+.voice_search:hover {
+    cursor: pointer;
+}
+
+
+/* End */
+.head_end {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.head_end>div {
+    cursor: pointer;
+}
+
+.create {
+    margin: 0 15px;
+}
+
+.apps {
+    margin: 0 15px;
+}
+
+.notification {
+    margin: 0 25px 0 15px;
+}
+
+.profile {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.profile:hover {
+    border: 1px solid var(--border-color);
+}
